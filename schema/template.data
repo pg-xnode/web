@@ -1,0 +1,28 @@
+INSERT INTO template 
+VALUES ('page_main', '<xnt:template xmlns:xnt="http://www.pg-xnode.org/xnt">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta content="text/html; charset=ISO-8859-1" http-equiv="Content-Type"/>
+    <title>pg_xnode - XML for PostgreSQL</title>
+    <link rel="stylesheet" type="text/css" href="{$root_static}/layout.css" />
+  </head>
+  <body>
+    <div class="main">
+      <div class="header">
+	pg_xnode
+      </div>
+
+      <xnt:copy-of expr="$menu"/>
+
+      <xnt:copy-of expr="$body"/>
+
+    </div>
+  </body>
+</html>
+</xnt:template>'),
+('menu', '<xnt:template xmlns:xnt="http://www.pg-xnode.org/xnt">
+	<div class="menu"><xnt:copy-of expr="$content"/></div>
+</xnt:template>'),
+('menu_item', '<xnt:template xmlns:xnt="http://www.pg-xnode.org/xnt">
+	<div class="menu_item"><a href="{$context}{$uri}" class="menu_item_text"><xnt:copy-of expr="$label"/></a></div>
+</xnt:template>');

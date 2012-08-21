@@ -1,0 +1,2 @@
+INSERT INTO menu(item_name, pos, request_uri)
+VALUES ('Home', 1, '/index.html'), ('Documentation', 2, '/doc.html'), ('Download', 3, '/download.html'); 

@@ -1,0 +1,55 @@
+.main {
+  height:80%;
+  width:70%;
+  float:none;
+  position:absolute;
+  left:15%;
+  top:10%;
+}
+
+.menu {
+  width:15%;
+  float:left;
+}
+
+.page {
+  width:84%;
+  height:100%;
+  float:right;
+  font-family:sans-serif;
+  font-size:0.85em;
+}
+      
+.header {
+  height:15%;
+  font-family:sans-serif;
+  font-size:1.2em;
+  font-weight:bold;
+  color:#245905;
+}
+
+.menu_item {
+  width:50%;
+  padding-bottom:2em;
+  font-family:sans-serif;
+  font-size:0.9em;
+}
+
+a.menu_item_text {
+  text-decoration:none;
+  color:#245905;
+}
+
+a.menu_item_text:visited {
+  text-decoration:none;
+  color:#245905;
+}
+
+.list_item {
+  height:5%;
+  padding-bottom:1em;
+}
+
+.div_default {
+  padding-bottom:1em;
+}

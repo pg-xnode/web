@@ -1,0 +1,5 @@
+This is a database schema to generate static web pages for pg_xnode project using
+pg_xnode's XML Node Templates (XNT).
+
+Once it may become a framework for implementation of web applications.
+Such a solution can be implemented as CGI, but Apache module seems to be better option.
