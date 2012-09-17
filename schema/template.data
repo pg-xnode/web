@@ -1,5 +1,6 @@
 INSERT INTO template 
 VALUES ('page_main', '<xnt:template xmlns:xnt="http://www.pg-xnode.org/xnt">
+<xnt:copy-of expr="$dtd"/>
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
     <meta content="text/html; charset=ISO-8859-1" http-equiv="Content-Type"/>
