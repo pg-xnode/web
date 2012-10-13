@@ -1,31 +1,60 @@
 .main {
-  height:80%;
-  width:70%;
-  float:none;
   position:absolute;
-  left:15%;
-  top:10%;
+  left:10%;
+  top:5%;
+  height:85%;
+  width:75%;
+  float:none;
 }
 
 .menu {
-  width:15%;
+  position:relative;
+  top:2.5em;
+  width:16%;
   float:left;
+  background:#f4f4f4;
+}
+
+.menu_panel {
+  position:relative;
+  left:6pt;
+  top:6pt;
 }
 
 .page {
-  width:84%;
-  height:100%;
+  position:relative;
+  top:2em;
+  width:82%;
+  height:85%;
   float:right;
   font-family:sans-serif;
   font-size:0.85em;
+  background:white;
+}
+
+.page_panel {
+  position:relative;
+  left:6pt;
+  top:6pt;
 }
       
 .header {
-  height:15%;
+  height:10%;
   font-family:sans-serif;
   font-size:1.2em;
   font-weight:bold;
-  color:#245905;
+  color:black;
+}
+
+.header_panel_fixed_height {
+  height:3em;
+  background:#dcdcdc;
+}
+
+.header_panel {
+  position:relative;
+  left:1em;
+  top:30%;
 }
 
 .menu_item {
@@ -37,12 +66,12 @@
 
 a.menu_item_text {
   text-decoration:none;
-  color:#245905;
+  color:black;
 }
 
 a.menu_item_text:visited {
   text-decoration:none;
-  color:#245905;
+  color:black;
 }
 
 .list_item {
@@ -52,4 +81,15 @@ a.menu_item_text:visited {
 
 .div_default {
   padding-bottom:1em;
+}
+
+.footer {
+  position:absolute;
+  float:none;
+  top:90%;
+  left:10%;
+  width:80%;
+  height:5%;
+  font-family:sans-serif;
+  font-size:8pt;
 }
