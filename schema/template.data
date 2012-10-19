@@ -1,7 +1,7 @@
 INSERT INTO template 
-VALUES ('page_main', '<xnt:template xmlns:xnt="http://www.pg-xnode.org/xnt">
-<xnt:copy-of expr="$dtd"/>
-<html xmlns="http://www.w3.org/1999/xhtml">
+VALUES ('page_main', '<xnt:template xmlns:xnt="http://www.pg-xnode.org/xnt"
+  preserve-space="true"
+  ><xnt:copy-of expr="$dtd"/><html xmlns="http://www.w3.org/1999/xhtml">
   <head>
     <meta content="text/html; charset=ISO-8859-1" http-equiv="Content-Type"/>
     <title>pg_xnode - DOM based implementation of XML for PostgreSQL</title>
@@ -31,16 +31,15 @@ VALUES ('page_main', '<xnt:template xmlns:xnt="http://www.pg-xnode.org/xnt">
       Copyright (C) 2012, Antonin Houska
     </div>
   </body>
-</html>
-</xnt:template>'),
+</html></xnt:template>'),
 ('menu',
-'<xnt:template xmlns:xnt="http://www.pg-xnode.org/xnt">
+'<xnt:template xmlns:xnt="http://www.pg-xnode.org/xnt" preserve-space="true">
   <div class="menu">
     <div class="menu_panel">
       <xnt:copy-of expr="$content"/>
     </div>
   </div>
 </xnt:template>'),
-('menu_item', '<xnt:template xmlns:xnt="http://www.pg-xnode.org/xnt">
+('menu_item', '<xnt:template xmlns:xnt="http://www.pg-xnode.org/xnt" preserve-space="true">
 	<div class="menu_item"><a href="{$context}{$uri}" class="menu_item_text"><xnt:copy-of expr="$label"/></a></div>
 </xnt:template>');
