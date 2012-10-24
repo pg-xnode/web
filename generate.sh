@@ -10,7 +10,7 @@ if [ ! -d $1 ]; then
 	exit -1
 fi
 
-PAGE_URIS='/  /doc /download'
+PAGE_URIS='/  /doc /download /dev'
 for URI in  $PAGE_URIS
 do
 	if [ $URI = "/" ]; then

@@ -24,6 +24,7 @@ CREATE OR REPLACE FUNCTION page(path_info varchar) RETURNS xml.doc AS $$
 				WHEN path_info='/' THEN 'body_main'
 				WHEN path_info='/doc' THEN 'body_doc'
 				WHEN path_info='/download' THEN 'body_download'
+				WHEN path_info='/dev' THEN 'body_dev'
 				ELSE NULL
 			END
 		);

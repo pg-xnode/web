@@ -12,16 +12,21 @@ VALUES
   User documentation is currently available in 2 formats:
   <ul>
     <li><div class="list_item"><a href="doc/html/index.html">HTML</a></div></li>
-    <li><div class="list_item"><a href="doc/pdf/pg_xnode_0.7.1.pdf">PDF</a></div></li>
+    <li><div class="list_item"><a href="doc/pdf/pg_xnode_0.7.2.pdf">PDF</a></div></li>
   </ul>
-</div>
-<div class="div_default">
-  Development documentation is on the project&apos;s <a href="https://github.com/pg-xnode/extension/wiki">wiki</a>
 </div>'),
 ('body_download',
 '<div class="div_default">
-  Source package of specific release can be found <a href="download">here</a>.
+  Source package of the current release can be downloaded <a href="download/pg_xnode-0.7.2.tar.gz">here</a>.
 </div>
 <div class="div_default">
   If you&apos;re interested in particular commit or the current HEAD, check <a href="https://github.com/pg-xnode/extension">here</a>.
+</div>'),
+('body_dev',
+'<div class="div_default">
+  Development documentation is on the project&apos;s <a href="https://github.com/pg-xnode/extension/wiki/pg_xnode">wiki</a> <br/>
+  If you&apos;re interested in particular commit or the current HEAD, check <a href="https://github.com/pg-xnode/extension">here</a>.
+</div>
+<div>
+  Please use the project&apos;s <a href="http://groups.google.com/group/pg_xnode/about">mailing list</a> to ask questions, propose new features or report bugs.
 </div>');
