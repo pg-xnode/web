@@ -1,11 +1,11 @@
 #!/bin/sh
-if [ $# -ne 1 ]; then
+if [ $# -ne 2 ]; then
 	echo "usage:
-$0 <output directory>"
+$0 <database name> <output directory>"
 	exit -1
 fi
 
-if [ ! -d $1 ]; then
+if [ ! -d $2 ]; then
 	echo "please specify valid output directory"
 	exit -1
 fi
@@ -18,6 +18,6 @@ do
 	else
 		OUT_FILE=`echo $URI | sed -e s/\\\/// `
 	fi
-	OUT_FILE=$1/$OUT_FILE.html
-	psql -U postgres -tAc "select page('$URI')" > $OUT_FILE
+	OUT_FILE=$2/$OUT_FILE.html
+	psql -U postgres -d $1 -tAc "select page('$URI')" > $OUT_FILE
 done
