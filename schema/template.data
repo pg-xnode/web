@@ -3,7 +3,7 @@ VALUES ('page_main', '<xnt:template xmlns:xnt="http://www.pg-xnode.org/xnt"
   preserve-space="true"
   ><xnt:copy-of expr="$dtd"/><html xmlns="http://www.w3.org/1999/xhtml">
   <head>
-    <meta content="text/html; charset=ISO-8859-1" http-equiv="Content-Type"/>
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
     <title>pg_xnode - DOM based implementation of XML for PostgreSQL</title>
     <link rel="stylesheet" type="text/css" href="{$root_static}/layout.css" />
   </head>
@@ -28,7 +28,12 @@ VALUES ('page_main', '<xnt:template xmlns:xnt="http://www.pg-xnode.org/xnt"
     </div>
 
     <div class="footer">
-      Copyright (C) 2012, Antonin Houska
+      <div class="copyright">
+        Copyright (C) 2012, Antonín Houska
+      </div>
+      <div class="updated">
+        Last update: <xnt:copy-of expr="$last_update"/>
+      </div>
     </div>
   </body>
 </html></xnt:template>'),
